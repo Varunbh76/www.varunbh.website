@@ -63,7 +63,8 @@
 }
 @media (max-width:768px){
     .about-col-2{
-        flex-basis: 100% !important;
+      flex-basis: 100%!important;
+        width: 100% !important;
     
     }
 }
