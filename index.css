@@ -397,16 +397,19 @@ nav ul li a:hover::after{
 .services-2{
     background-image: url(./img/web.avif);
     background-repeat: no-repeat;
+    background-size: auto 600px;
     
     
 }
 .services-1{
     background-image: url(./img/ui\ designer.avif);
     background-repeat: no-repeat;
+    background-size: auto 600px;
 }
 .services-3{
     background-image: url(./img/app\ application.avif);
     background-repeat: no-repeat;
+    background-size: auto 600px;
 }
 .services-list div i{
     font-size: 50px;
