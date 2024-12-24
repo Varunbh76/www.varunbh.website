@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
         tailwind.config = {
@@ -62,9 +63,9 @@
     <!-- ----------------------main-section------------------------- -->
     <section class="flex  flex-col-reverse  md:flex-row justify-between items-center  md:mx-10 xlmd:mx-24 xs:my-1 md:my-9 xlmd:my-14  gap-14 xs:gap-10 xlmd:gap-2 ani">
        <div class="   w-full md:w-[50%] flex flex-col justify-between items-start gap-5 ">
-        <div class="w-full space-y-4 flex flex-col items-start justify-center mx-9 xxs:mx-10 md:mx-0 "><p class="text-2xl">Full Stack <span class="text-[#ff004f]">Developer</span></p> 
-        <h2 class="  text-2xl ls:text-3xl xxs:text-4xl xs:text-5xl md:text-4xl xlmd:text-5xl ">Hello,I'm<i><span class="text-[#ff004f] col ">Varun B H</span></i></h2>
-    <h2 class=" text-2xl xxs:text-4xl">From Bengalore</h2>
+        <div class="w-full space-y-4 flex flex-col items-start justify-center mx-9 xxs:mx-10 md:mx-0 "><p class="text-3xl">Hello,its's Me <br><span class="text-5xl text-[#ff004f]">Varun B H</span></p>
+        <h2 class="  text-2xl ls:text-3xl xxs:text-4xl xs:text-5xl md:text-4xl xlmd:text-4xl ">And I'm a <span id="hi" class="text-5xl text-[#ff004f]"></span></h2>
+    <h2 class=" text-2xl xxs:text-4xl">From Bengaluru</h2>
         </div>
         
     <div class="flex items-center gap-3 xxs:gap-6 mx-9 xxs:mx-10 md:mx-0   "  >
@@ -253,6 +254,16 @@ function opentab(tabname){
         
     }
 </script>
-
+<!-- --------------font continuous repeating------------ -->
+<!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>//use this script in head -->
+<script>
+    var typed = new Typed('#hi', {
+      strings: ['<i>FrontEnd Developer</i> ',' <i>Web Developer</i>'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 100,
+      loop:true
+    });
+  </script>
 </body>
 </html

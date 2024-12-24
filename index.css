@@ -310,7 +310,7 @@ nav ul li a:hover::after{
  }
 } */
 
-
+/* --------------------animations-------------------------- */
 @keyframes appear {
     from {
       opacity: 0;
