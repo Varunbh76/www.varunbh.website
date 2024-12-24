@@ -6,7 +6,9 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -40,19 +42,22 @@
     </script>
 </head>
 <body class="bg-[#090909] text-white">
-    <header class=" bg-black   py-9  w-auto flex justify-between items-center  xlmd:mx-14  ani " >
-       <i><h1 class=" text-4xl xlmd:text-5xl text-white w-[100%] translate-x-5"><span class="text-red-700 w-full ">Tech</span>Portfolio</h1></i> 
-        <nav >  
-            <ul class="text-white  md:flex justify-between items-center hidden sm:gap-[2rem] md:gap-[3rem] xlmd:gap-[4rem] -translate-x-7 ">
-                <li ><a href="#home">Home</a></li>
+   <div id="header">
+       <div class="con ">
+        <nav>
+            <i><h1 class=" text-3xl xlmd:text-5xl">Tech<span class="text-[#ff004f] ">Portfolio</span></h1></i>
+            <ul id="sidemenu">
+                <li><a href="">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#project  ">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-navicon" style="font-size:36px" onclick="closemenu()"></i>
             </ul>
+            <i class="fa fa-navicon" style="font-size:36px" onclick="openmenu()"></i>
         </nav>
-        
-    </header>
+       </div>
+   </div>
 
     <!-- ----------------------main-section------------------------- -->
     <section class="flex  flex-col-reverse  md:flex-row justify-between items-center  md:mx-10 xlmd:mx-24 xs:my-1 md:my-9 xlmd:my-14  gap-14 xs:gap-10 xlmd:gap-2 ani">
@@ -126,8 +131,8 @@
     </div>
    </section>
    <!-- ----------------------------services section-------------------------------- -->
-   <section>
-    <div class="services  mx-7 xxs:mx-10 lg:mx-14  my-14 lg:my-14  p-[0]  ani" id="services ">
+   <section id="services">
+    <div class="services  mx-7 xxs:mx-10 lg:mx-14  my-14 lg:my-14  p-[0]  ani">
         <div class="container">
             <h1 class="sub-title text-[40px] xs:text-[60px]">My<span>Services</span></h1>
             <div class="services-list mt-[5px] xs:mt-[50px]">
@@ -138,7 +143,7 @@
                     <a href="" class="read">Learn More</a>
                 </div>
                 <div class="services-2">
-                    <i class='bx bx-crop' style='color:#ff0000'  ></i>
+                    <i class='bx bx-crop' style='color:#ff004f'  ></i>
                     <h2>Web Apps/Web Applications design</h2>
                     <p>web application, is a software program that runs in a web browser and is stored on a remote server. Web apps are different from native apps, which are downloaded and installed on a device. Web apps are accessed through a web address and aren't installed on a device</p>
                     <a href="" class="read">Learn More</a>
@@ -156,7 +161,7 @@
     </div>
 </section>
 <!-- ------------------------------ project section--------------------------------------- -->
- <section class="flex flex-col gap-14 items-center mx-1 xlmd:mx-24 my-[150px] ani" id="project">
+ <section class="flex flex-col gap-14 items-center mx-1 xlmd:mx-24 my-[150px] ani" id="projects">
     <div class="project-head my-10 "><h1 class="text-6xl">My<span class="text-[#ff004f]">Projects</span></h1></div>
     <div class="title-1 ani "><h2 class="project-h2">Hospital Management System</h2>
         <p>Developed hospital webpage in html, css, javascript, python and django
@@ -228,6 +233,25 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 
 }
+</script>
+<script>
+    var sidemenu =document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right ="100px";
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right ="0";
+
+    }
+    function closemenu(){
+        sidemeu.style.right ="-200px";
+        
+    }
 </script>
 
 </body>
